@@ -1,0 +1,21 @@
+Divide n Conquer:
+
+This strategy use only recursive approach.It is also called a top down approach because this approach break the main problems into sub problems then find out a solution and then compute the whole solutions which come from solving a subproblems.This lifecycle goes recursively until the number of length in an array is complete or we can say until the whole sob problems solved.
+
+This approach takes more time for execution because it breaks the each goal problem into sub parts of a problem.
+
+Every component should be individual for the main problems statement.
+
+DnC approach use where a decision to be taken.Quick sort and merge sort algorithm is the perfect example for this approach beacause in that algorithm swapping decision will be taken over maximum or minimum value.
+
+
+
+Dynamic programming:
+
+This strategy use the recursive and re-usability approach and also extend the divide n conquer rule. In this approach once the sub step of problems are solved then that solution stored in a separate table and later use that solution if another sub problem is same as another subproblem.It is also called a bottom up approach because this approach first solve the sub problems to obtain the solution of a main problem.
+
+This approach takes less time for execution because it reuse the solution of sub parts of a problem.
+
+Provide the component that can be reused for the problems.
+
+DP is used where the problem is optimize or we can either say it is used where we have to find shortest or longest path.Fibonacci series,knapsack problem is the perfect example for this approach.
