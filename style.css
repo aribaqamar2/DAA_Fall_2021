@@ -1,41 +1,164 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-header{
-    min-height: 90px;
-    background-color: rgb(0, 153, 255);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  min-height: 90px;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.footer-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    background-color: rgb(0, 153, 255);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
-    color: #fff;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: rgb(0, 153, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.027);
+  color: #fff;
 }
-h2{
-    margin: 0;
-    color: #fff;
-    font-family: 'poppins';
+h2 {
+  margin: 0;
+  color: #fff;
+  font-family: "poppins";
 }
 
-h1{
-    color: rebeccapurple !important;
+h1 {
+  color: rebeccapurple !important;
+}
+table {
+  border-spacing: 0;
+  padding-bottom: 40px;
+}
+td.box {
+  padding: 20px;
+  text-align: center;
+}
+td.queen {
+  animation: morphing 10s infinite;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid;
+  border-image: linear-gradient(
+    130deg,
+    #ff7a18,
+    #af002d 41.07%,
+    #35adb4 76.05%
+  );
+}
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: rgb(252, 212, 80);
+}
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: rgb(107, 82, 0);
+  color: #fff;
+}
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: rgb(252, 212, 80);
+}
+tr:nth-child(even) td:nth-child(even) {
+  background-color: rgb(107, 82, 0);
+  color: #fff;
+}
+.form {
+  display: flex;
+  padding-bottom: 20px;
+}
+input {
+  border: 0;
+  box-shadow: 0 0 10px #0000002b;
+  min-height: 40px;
+  width: 60%;
+  padding: 0 20px;
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+button {
+  background: #09f;
+  border: none;
+  width: max-content;
+  padding: 0 40px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@-moz-keyframes morphing {
+  0% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
+}
+@-webkit-keyframes morphing {
+  0% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
+}
+@-o-keyframes morphing {
+  0% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
+}
+@keyframes morphing {
+  0% {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
 }

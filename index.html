@@ -2,13 +2,21 @@
 <html>
   <head>
     <title>DAA Project</title>
+    <script src="./plotly-2.6.3.min.js"></script>
+    <script src="./script.js"></script>
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header><h2>DAA Project Fall 2021</h2></header>
     <div class="main">
-      <h1>Project Detail wil be here</h1>
-      <p>Description Here</p>
+      <h1>We are Solving N-Queen Problem</h1>
+      <p>Please input Board length</p>
+      <div class="form">
+        <input id="userInput" type="number" placeholder="Enter Board"></input>
+        <button onClick="solveNQueens(document.getElementById('userInput').value)">submit</button>
+      </div>
+      <table id="myTable"></table>
     </div>
     <footer>
       <div class="footer-div">
