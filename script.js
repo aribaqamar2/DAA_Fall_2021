@@ -1,9 +1,8 @@
 let count = 0;
 
-var solveNQueens = function (n) {
+var solveNQueens = function (num) {
+  let n = +num;
   if(n>3){
-  parseInt(n);
-  console.log("run", n);
   var res = [];
   if (n === 1 || n >= 4) dfs(res, [], n, 0);
   return res;
@@ -21,7 +20,6 @@ var dfs = function (res, points, n, index) {
         points.push([i, j]);
         dfs(res, points, n, i + 1);
         if (points.length === n) res.push(buildRes(points));
-        console.log({ points });
         points.pop();
       }
     }
@@ -43,8 +41,7 @@ var buildRes = function (points) {
 };
 
 var drawBoard = function (res, count,points) {
-  console.log("new print array", { res }, count);
-  if (count === 2) {
+  if (count ===2 ) {
     var n = res.length;
     for (var i = 0; i < n; i++) {
       var x = document.getElementById("myTable").insertRow(i);
@@ -62,7 +59,6 @@ var drawBoard = function (res, count,points) {
 };
 
 var isValid = function (oldPoints, newPoint) {
-  // console.log("points",oldPoints, newPoint)
   var len = oldPoints.length;
   for (var i = 0; i < len; i++) {
     if (oldPoints[i][0] === newPoint[0] || oldPoints[i][1] === newPoint[1])
