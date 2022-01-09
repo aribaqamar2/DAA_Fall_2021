@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
   <head>
     <title>DAA Project</title>
     <script src="./plotly-2.6.3.min.js"></script>
@@ -16,7 +17,13 @@
         <input id="userInput" type="number" placeholder="Enter Board"></input>
         <button onClick="triggerFunction(document.getElementById('userInput').value)">submit</button>
       </div>
+      <div class="table-div">
       <table id="myTable"></table>
+      <table id="myTable1"></table>
+      </div>
+      <span>Total Time</span> 
+      <p id="timer"></p>
+      <div class="graph" id="graph"></div>
     </div>
     <footer>
       <div class="footer-div">
